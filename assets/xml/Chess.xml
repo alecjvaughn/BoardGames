@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href=""?>
+<game>
+  <board>
+    <grid x="8" y="8" pattern="checkered"></grid>
+  </board>
+  <pieces>
+    <piece name="Pawn" color="white" x="0" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="1" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="2" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="3" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="4" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="5" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="6" y="1">♙</piece>
+    <piece name="Pawn" color="white" x="7" y="1">♙</piece>
+    <piece name="Rook" color="white" x="0" y="0">♖</piece>
+    <piece name="Knight" color="white" x="1" y="0">♘</piece>
+    <piece name="Bishop" color="white" x="2" y="0">♗</piece>
+    <piece name="Queen" color="white" x="3" y="0">♕</piece>
+    <piece name="King" color="white" x="4" y="0">♔</piece>
+    <piece name="Bishop" color="white" x="5" y="0">♗</piece>
+    <piece name="Knight" color="white" x="6" y="0">♘</piece>
+    <piece name="Rook" color="white" x="7" y="">♖</piece>
+    <piece name="Pawn" color="black" x="0" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="1" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="2" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="3" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="4" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="5" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="6" y="6">♟</piece>
+    <piece name="Pawn" color="black" x="7" y="6">♟</piece>
+    <piece name="Rook" color="black" x="0" y="7">♜</piece>
+    <piece name="Knight" color="black" x="1" y="7">♞</piece>
+    <piece name="Bishop" color="black" x="2" y="7">♝</piece>
+    <piece name="Queen" color="black" x="3" y="7">♛</piece>
+    <piece name="King" color="black" x="4" y="7">♚</piece>
+    <piece name="Bishop" color="black" x="5" y="7">♝</piece>
+    <piece name="Knight" color="black" x="6" y="7">♞</piece>
+    <piece name="Rook" color="black" x="7" y="7">♜</piece>
+  </pieces>
+</game>

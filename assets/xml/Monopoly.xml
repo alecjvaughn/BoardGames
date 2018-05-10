@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href=""?>
+<game>
+  <assets>
+    <board>
+      <grid x="11" y="11"></grid>
+      <spaces>
+        <space sequence="0" x="10" y="0" type="special">GO
+          <rule><collect>200</collect><on>passing</on></rule>
+          <rule><collect>400</collect><on>landed-on</on></rule>
+        </space>
+        <space sequence="1" x="9" y="0" type="lot">Mediterranean Avenue
+          <info set="brown" purchase="60" improve="50" rent="[2,10,30,90,160,250]"></info>
+        </space>
+        <space sequence="2" x="8" y="0" type="chest" rule="draw">Community Chest</space>
+        <space sequence="3" x="7" y="0" type="lot">Baltic Avenue
+          <info set="brown" purchase="60" improve="50" rent="[4,20,60,180,320,450]"></info>
+        </space>
+        <space sequence="4" x="6" y="0" type="tax">Income Tax
+          <rule><if>equity&lt;2000<pay>200</pay><else><pay>.1*equity</pay></else></if></rule>
+        </space>
+        <space sequence="5" x="5" y="0" type="rr" group="property">Reading Railroad</space>
+        <space sequence="6" x="4" y="0" type="lot" group="property">Oriental Avenue
+          <info set="cyan" purchase="100" improve="50" rent="[6,30,90,270,400,550]"></info>
+        </space>
+        <space sequence="7" x="3" y="0" type="chance" rule="draw">Chance</space>
+        <space sequence="8" x="2" y="0" type="lot" group="property">Vermont Avenue
+          <info set="cyan" purchase="100" improve="50" rent="[6,30,90,270,400,550]"></info>
+        </space>
+        <space sequence="9" x="1" y="0" type="lot" group="property">Connecticut Avenue
+          <info set="cyan" purchase="120" improve="50" rent="[8,40,100,300,450,600]"></info>
+        </space>
+        <space sequence="10" x="0" y="0" type="special">Jail
+          <rule><if>inJail
+            <pay>50</pay><false>inJail</false>
+            <if>rolled-doubles<false>inJail</false><move>roll<move></if>
+            <if><turns>3</turns></if><false>inJail</false></rule>
+          </if></rule>
+        </space>
+        <space sequence="11" x="0" y="1" type="lot" group="property">St. Charles Place
+          <info set="pink" purchase="140" improve="100" rent="[10,50,150,450,625,750]"></info>
+        </space>
+        <space sequence="12" x="0" y="2" type="util" group="property">Electric Company</space>
+        <space sequence="13" x="0" y="3" type="lot" group="property">States Avenue
+          <info set="pink" purchase="140" improve="100" rent="[10,50,150,450,625,750]"></info>
+        </space>
+        <space sequence="14" x="0" y="4" type="lot" group="property">Virginia Avenue
+          <info set="pink" purchase="160" improve="100" rent="[12,60,180,500,700,900]"></info>
+        </space>
+        <space sequence="15" x="0" y="5" type="rr" group="property">Pennsylvania Railroad</space>
+        <space sequence="16" x="0" y="6" type="lot" group="property">St. James Place
+          <info set="orange" purchase="180" improve="100" rent="[14,70,200,550,750,950]"></info>
+        </space>
+        <space sequence="17" x="0" y="7" type="chest" rule="draw">Community Chest</space>
+        <space sequence="18" x="0" y="8" type="lot" group="property">Tennessee Avenue
+          <info set="orange" purchase="180" improve="100" rent="[14,70,200,550,750,950]"></info>
+        </space>
+        <space sequence="19" x="0" y="9" type="lot" group="property">New York Avenue
+          <info set="orange" purchase="200" improve="100" rent="[16,80,220,600,800,1000]"></info>
+        </space>
+        <space sequence="20" x="0" y="10" type="special">Free Parking</space>
+        <space sequence="21" x="1" y="10" type="lot" group="property">Kentucky Avenue
+          <info set="red" purchase="220" improve="150" rent="[18,90,250,700,875,1050]"></info>
+        </space>
+        <space sequence="22" x="2" y="10" type="chance" rule="draw">Chance</space>
+        <space sequence="23" x="3" y="10" type="lot" group="property">Indiana Avenue
+          <info set="red" purchase="220" improve="150" rent="[18,90,250,700,875,1050]"></info>
+        </space>
+        <space sequence="24" x="4" y="10" type="lot" group="property">Illinois Avenue
+          <info set="red" purchase="240" improve="150" rent="[20,100,300,750,925,1100]"></info>
+        </space>
+        <space sequence="25" x="5" y="10" type="rr" group="property">B. &amp; O. Railroad</space>
+        <space sequence="26" x="6" y="10" type="lot" group="property">Atlantic Avenue
+          <info set="yellow" purchase="260" improve="150" rent="[22,110,330,800,975,1150]"></info>
+        </space>
+        <space sequence="27" x="7" y="10" type="lot" group="property">Ventnor Avenue
+          <info set="yellow" purchase="260" improve="150" rent="[22,110,330,800,975,1150]"></info>
+        </space>
+        <space sequence="28" x="8" y="10" type="util" group="property">Water Works</space>
+        <space sequence="29" x="9" y="10" type="lot" group="property">Marvin Gardens
+          <info set="yellow" purchase="280" improve="150" rent="[24,120,360,850,1025,1200]"></info>
+        </space>
+        <space sequence="30" x="10" y="10" type="special" rule="move">Go To Jail
+          <rule><move>Jail</move><true>inJail</true></rule>
+        </space>
+        <space sequence="31" x="10" y="9" type="lot" group="property">Pacific Avenue
+          <info set="green" purchase="300" improve="200" rent="[26,130,390,900,1100,1275]"></info>
+        </space>
+        <space sequence="32" x="10" y="8" type="lot" group="property">North Carolina Avenue
+          <info set="green" purchase="300" improve="200" rent="[26,130,390,900,1100,1275]"></info>
+        </space>
+        <space sequence="33" x="10" y="7" type="chest" rule="draw">Community Chest</space>
+        <space sequence="34" x="10" y="6" type="lot" group="property">Pennsylvania Avenue
+          <info set="green" purchase="320" improve="200" rent="[28,150,450,1000,1200,1400]"></info>
+        </space>
+        <space sequence="35" x="10" y="5" type="rr" group="property">Short Line</space>
+        <space sequence="36" x="10" y="4" type="chance" rule="draw">Chance</space>
+        <space sequence="37" x="10" y="3" type="lot" group="property">Park Place
+          <info set="blue" purchase="350" improve="200" rent="[35,175,500,1100,1300,1500]"></info>
+        </space>
+        <space sequence="38" x="10" y="2" type="tax" rule="pay">Luxury Tax
+          <rule><pay>100</pay></rule>
+        </space>
+        <space sequence="39" x="10" y="1" type="lot" group="property">Boardwalk
+          <info set="blue" purchase="400" improve="200" rent="[50,200,600,1400,1700,2000]"></info>
+        </space>
+      </spaces>
+    </board>
+    <cards>
+      <card type="chance">Advance to GO (Collect $200)</card>
+      <card type="chance">Advance to Illinois Avenue (If you pass GO, collect $200)</card>
+      <card type="chance">Advance token to the nearest railroad and pay owner twice the rental to which they are normally entitled (May be purchased if unowned)</card>
+      <card type="chance">Advance token to the nearest railroad and pay owner twice the rental to which they are normally entitled (May be purchased if unowned)</card>
+      <card type="chance">Bank pays you dividend of $50</card>
+      <card type="chance">Get out of Jail free (May be kept until needed or traded)</card>
+      <card type="chance">Go back 3 spaces</card>
+      <card type="chance">Go directly to JAIL (Do not pass GO, do not collect $200)</card>
+      <card type="chance">Take a walk on the Boardwalk (Advance token to Boardwalk)</card>
+      <card type="chance">Take a ride on the Reading Railroad (If you pass GO collect $200)</card>
+      <card type="chance">Your building and loan matures (Collect $150)</card>
+      <card type="chance">Make general repairs on all your property (Pay $25 for each house and $100 for each hotel)</card>
+      <card type="chance">Advance to St. Charles Place (If you pass GO, collect $200)</card>
+      <card type="chance">Advance token to nearest utility (May be purchased if unowned; otherwise throw dice and pay owner a total of ten times the amount thrown)</card>
+      <card type="chance">You have been elected chairman of the board (pay each player $50)</card>
+      <card type="chance">Pay poor tax of $15</card>
+      <card type="chest">Advance to Go (Collect $200)</card>
+      <card type="chest">Grand Opera Opening (Collect $50 from every player for opening night seats)</card>
+      <card type="chest">Bank error in your favor (Collect $200)</card>
+      <card type="chest">Get out of Jail free (May be kept until needed, traded, or sold)</card>
+      <card type="chest">Go directly to jail (Do not pass GO; do not collect $200)</card>
+      <card type="chest">Doctor's fee (Pay $50)</card>
+      <card type="chest">You have won second prize in a beauty contest (Collect $10)</card>
+      <card type="chest">You inherit $100</card>
+      <card type="chest">Income tax refund (Collect $20)</card>
+      <card type="chest">Pay hospital $100</card>
+      <card type="chest">Christmas fund matures (Collect $100)</card>
+      <card type="chest">You are assessed for street repairs ($40 per house; $115 per hotel)</card>
+      <card type="chest">From sale of stock you get $45</card>
+      <card type="chest">Receive for services $25</card>
+      <card type="chest">Pay school tax of $150</card>
+      <card type="chest">Life insurance matures (collect $100)</card>
+    </cards>
+    <pieces>
+      <piece start="GO">Thimble</piece>
+      <piece start="GO">Shoe</piece>
+      <piece start="GO">Hat</piece>
+      <piece start="GO">Iron</piece>
+      <piece start="GO">Cannon</piece>
+      <piece start="GO">Ship</piece>
+    </pieces>
+    <dice>2</dice>
+  </assets>
+  <rules>
+    <rule><if>rolled-doubles<turn>repeat<until><turn>3</turn></until></turn></if></rule>
+    <property>
+      <rule><if>no-owner</if>purchase</rule>
+      <rule><if>unimproved</if><mortgaged>true</mortgaged><collect>.5*purchase</collect></rule>
+      <rule><if>mortgaged</if><unmortgage>true</unmortgage><pay>1.1*(.5*purchase)</pay></rule>
+      <lot>
+        <rule><if>not-owner</if>rent[improved]</rule>
+        <rule><if>own-set<improve><pay>improve</pay><until>5</until></improve></if></rule>
+        <rule><if>improved<unimprove><collect>.5*improve</collect></unimprove></if></rule>
+      </lot>
+      <rr>
+        <info purchase="200" rent="[25,50,100,200]"></info>
+        <rule><if>not-owner<rent>rent[rrs-owned]</rent></if></rule>
+      </rr>
+      <util>
+        <info purchace="150" rent="[4*roll,10*roll]"></info>
+        <rule><if>not-owner<rent>rent[utils-owned]</rent></if></rule>
+      </util>
+    </property>
+  </rules>
+</game>

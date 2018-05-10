@@ -1,0 +1,13 @@
+TODO:
+Lands on Chance
+Lands on CC
+Save game
+Restart game
+
+DONE:
+System log
+Doubles, roll again
+Land on properties
+view property info on location
+purchase property (gui: ownership, reduce cash)
+pass go, add cash

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<SplitPane dividerPositions="0.5" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MonopolyGUIController">
+   <items>
+      <AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="550.0">
+         <children>
+            <ImageView fx:id="boardImage" fitHeight="496.0" fitWidth="520.0" layoutX="15.0" layoutY="14.0" opacity="0.5" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@../../misc/images/board.jpg" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="board" alignment="CENTER" layoutX="49.0" layoutY="83.0" prefHeight="495.0" prefWidth="498.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="11.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="35.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="29.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="28.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="29.0" />
+                	<ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="29.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="28.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="29.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="28.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="29.0" prefWidth="0.0" />
+                	<ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="28.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="12.0" prefWidth="28.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="34.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="20.0" percentWidth="11.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="72.65246200561523" minHeight="10.0" prefHeight="15.088234901428223" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.45588684082031" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="14.544113159179688" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="40.73529815673828" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="53.97057342529297" minHeight="10.0" prefHeight="42.7205810546875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="57.121978759765625" minHeight="10.0" prefHeight="40.632354736328125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="58.91203308105469" minHeight="10.0" prefHeight="40.17646789550781" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.54182434082031" minHeight="10.0" prefHeight="42.7205810546875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="57.75177001953125" minHeight="10.0" prefHeight="40.36767578125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="56.86761474609375" minHeight="10.0" prefHeight="40.63232421875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="65.20584106445312" minHeight="10.0" prefHeight="40.2794189453125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="107.4117431640625" minHeight="10.0" prefHeight="40.470611572265625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="77.14706420898438" minHeight="0.0" prefHeight="13.014739990234375" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="77.14706420898438" minHeight="10.0" prefHeight="50.720611572265625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="77.14706420898438" minHeight="10.0" prefHeight="13.279388427734375" vgrow="SOMETIMES" />
+              </rowConstraints>
+              <children>         
+                  <VBox fx:id="space0" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="13" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="player1MoveToken" text="Piece 1" />
+                        <Label fx:id="player2MoveToken" text="Piece 2" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="space1" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="11" GridPane.rowIndex="13" />
+                  <VBox fx:id="space2" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="10" GridPane.rowIndex="13" />
+                  <VBox fx:id="space3" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="9" GridPane.rowIndex="13" />
+                  <VBox fx:id="space4" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="8" GridPane.rowIndex="13" />
+                  <VBox fx:id="space5" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+                  <VBox fx:id="space6" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+                  <VBox fx:id="space7" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+                  <VBox fx:id="space8" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+                  <VBox fx:id="space9" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                  <VBox fx:id="space10" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="51.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <VBox fx:id="space11" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <VBox fx:id="space12" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <VBox fx:id="space13" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <VBox fx:id="space14" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <VBox fx:id="space15" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <VBox fx:id="space16" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <VBox fx:id="space17" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <VBox fx:id="space18" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <VBox fx:id="space19" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <VBox fx:id="space20" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="58.0" rotate="180.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <VBox fx:id="space21" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <VBox fx:id="space22" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <VBox fx:id="space23" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <VBox fx:id="space24" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <VBox fx:id="space25" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <VBox fx:id="space26" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <VBox fx:id="space27" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                  <VBox fx:id="space28" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                  <VBox fx:id="space29" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="180.0" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+                  <VBox fx:id="space30" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="94.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+                  <VBox fx:id="space31" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+                  <VBox fx:id="space32" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+                  <VBox fx:id="space33" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+                  <VBox fx:id="space34" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+                  <VBox fx:id="space35" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+                  <VBox fx:id="space36" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+                  <VBox fx:id="space37" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="9" />
+                  <VBox fx:id="space38" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="10" />
+                  <VBox fx:id="space39" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="53.0" prefWidth="45.0" rotate="270.0" GridPane.columnIndex="13" GridPane.rowIndex="11" />
+              		<Label />
+              		<Label fx:id="brown1Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="42.0" text="Owner" GridPane.columnIndex="11" GridPane.rowIndex="14">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  
+                        <Label />
+              		<Label fx:id="brown2Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="47.0" text="Owner" GridPane.columnIndex="9" GridPane.rowIndex="14">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="rr1Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Owner" GridPane.columnIndex="7" GridPane.rowIndex="14">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cyan1Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Owner" GridPane.columnIndex="6" GridPane.rowIndex="14">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="cyan2Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Owner" GridPane.columnIndex="4" GridPane.rowIndex="14">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cyan3Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Owner" GridPane.columnIndex="3" GridPane.rowIndex="14">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="pink1Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="11">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="utility1Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="10">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pink2Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pink3Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rr2Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orange1Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="orange2Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orange3Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Owner" translateX="-15.0" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="red1Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Owner" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="red2Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="180.0" text="Owner" GridPane.columnIndex="5">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="red3Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="180.0" text="Owner" GridPane.columnIndex="6">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rr3Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="180.0" text="Owner" GridPane.columnIndex="7">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="yellow1Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="180.0" text="Owner" GridPane.columnIndex="8">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="yellow2Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="180.0" text="Owner" GridPane.columnIndex="9">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="utility2Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Owner" GridPane.columnIndex="10">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="yellow3Owner" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" rotate="180.0" text="Owner" GridPane.columnIndex="11">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="green1Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Owner" translateX="-13.0" GridPane.columnIndex="14" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="green2Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Owner" translateX="-13.0" GridPane.columnIndex="14" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="green3Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Owner" translateX="-13.0" GridPane.columnIndex="14" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="rr4Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Owner" translateX="-13.0" GridPane.columnIndex="14" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="blue1Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Owner" translateX="-13.0" GridPane.columnIndex="14" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="blue2Owner" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Owner" translateX="-13.0" GridPane.columnIndex="14" GridPane.rowIndex="11">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="brown1Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Properties" GridPane.columnIndex="11" GridPane.rowIndex="12">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="brown2Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Properties" GridPane.columnIndex="9" GridPane.rowIndex="12">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label />
+                  <Label fx:id="cyan1Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Properties" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="cyan2Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Properties" GridPane.columnIndex="4" GridPane.rowIndex="12">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cyan3Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="40.0" text="Properties" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="pink1Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Properties" translateX="-15.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="pink2Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Properties" translateX="-15.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pink3Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Properties" translateX="-15.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="orange1Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Properties" translateX="-15.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="orange2Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Properties" translateX="-15.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orange3Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="17.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="90.0" text="Properties" translateX="-15.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="red1Properites" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Properties" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="red2Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Properties" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="red3Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Properties" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="yellow1Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Properties" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="yellow2Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Properties" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="yellow3Properties" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="45.0" rotate="180.0" text="Properties" GridPane.columnIndex="11" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="green1Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="7.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Properties" translateX="-13.0" GridPane.columnIndex="12" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="green2Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="7.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Properties" translateX="-13.0" GridPane.columnIndex="12" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="green3Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="7.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Properties" translateX="-13.0" GridPane.columnIndex="12" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label />
+                  <Label fx:id="blue1Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="7.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Properties" translateX="-13.0" GridPane.columnIndex="12" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <Label />
+                  <Label fx:id="blue2Properties" alignment="CENTER" contentDisplay="CENTER" minHeight="7.0" minWidth="45.0" prefHeight="17.0" prefWidth="45.0" rotate="270.0" text="Properties" translateX="-13.0" GridPane.columnIndex="12" GridPane.rowIndex="11">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane prefHeight="262.0" prefWidth="334.0" GridPane.columnIndex="3" GridPane.columnSpan="9" GridPane.rowIndex="3" GridPane.rowSpan="9">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="5.0" layoutY="313.0" prefHeight="40.0" prefWidth="224.0" spacing="2.0">
+                           <children>
+                              <Button fx:id="rollButton" disable="true" mnemonicParsing="false" onAction="#playerRoll" text="Roll" />
+                              <Button fx:id="tradeButton" disable="true" mnemonicParsing="false" onAction="#playerTradeProperties" text="Trade" />
+                              <Button fx:id="manageButton" disable="true" mnemonicParsing="false" onAction="#playerManageProperties" prefHeight="27.0" prefWidth="69.0" text="Manage" />
+                              <Button fx:id="doneButton" disable="true" mnemonicParsing="false" onAction="#playerDone" text="Done" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="169.0" layoutY="10.0" prefHeight="52.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="player1Header" text="Player 1:" />
+                                    <Label fx:id="player1PieceName" text="Piece" />
+                                    <Label fx:id="player1Money" text="Money" />
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="player2Header" text="Player 2:" />
+                                    <Label fx:id="player2PieceName" text="Piece" />
+                                    <Label fx:id="player2Money" text="Money" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="startButton" layoutX="166.0" layoutY="169.0" mnemonicParsing="false" onAction="#startGame" text="Start" />
+                        <Label fx:id="currentPlayerLabel" layoutX="14.0" layoutY="297.0" text="Current Player" />
+                        <Label layoutX="14.0" layoutY="280.0" text="Playing:" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" />
+   </items>
+</SplitPane>

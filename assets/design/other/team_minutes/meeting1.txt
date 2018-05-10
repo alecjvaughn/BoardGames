@@ -1,0 +1,61 @@
+Team Alpha Bravo Charlie
+Meeting Minutes
+11/2 5:30pm-6:30pm
+
+1. Weekly meeting time: Saturday 4:30pm
+	Evenings during the week don’t work good for Babita
+	Fridays (not 12pm-3pm) and Saturdays work for Alec
+	Friday and Saturday afternoons work for Chris
+2. Version control: Git
+	default to exchanging source code via email if Git is too difficult
+3. Remote meeting: Skype
+	exchange account names via email
+	backup: can meet in TSC during during work week
+4. Copy iteration 1 source code from book
+	responsible: Babita
+5. Chris and Alec stepped through assignment sheet and found these important pieces to implement:
+	load(game)
+	store(game)
+	newgame(): game
+	update(turnState)
+	2x External Storage Interfaces (DB, file)
+		Adapter interface
+		responsible: Alec
+	Patterns (min: 1 of each)
+		Adapter
+		Factory
+		Singleton
+		Observer
+		Additional (optional)
+	Submission:
+		Any diagrams/other used in design
+		Java src
+		Design report w/ 
+			responsibilities, 
+			design patterns used and purposes
+	UML diagrams:
+		structural (domain model, class design)
+		interaction (sequence, communication)
+		other (use case diagram)?
+	Other:
+		use cases/user stories
+	Code:
+		from book (at least it1)
+		include a driver/client
+		two ways to store
+		2x Observers
+			GUI
+			Text-based
+		Use Java Observable + Observer to implement observable pattern
+		study GoF/HW#9 design patters
+		Appointments with Chi are welcome
+	Extra:
+		May consider MVC architectural pattern
+		Junit for testing
+		Initial use cases/user stories
+		Google calendar for schedules
+		Schedule time to demo
+	Next meeting:
+		Initial design
+		responsibilities
+	

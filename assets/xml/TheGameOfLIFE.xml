@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href=""?>
+<game>
+  <board>
+    <grid x="40" y="20"></grid>
+  </board>
+  <cards></cards>
+  <pieces></pieces>
+  <cash></cash>
+</game>

@@ -1,0 +1,45 @@
+Monopoly user stories
+- As a… I want… So that (opt)…
+Required:
+- I want to start a new game
+- I want to save the current game
+- I want to keep games that I’ve finished
+- I want to load a previous game
+- I want to store data in a database
+- I want to store data in files
+- I want to interact with a GUI (observer)
+- I want to output events to a console (observer)
+- I want to update the observers after each turn
+Iteration 1 (required):
+- I want to indicate number of sim players (1..7)
+- I want to see a trace of a sim’s turn
+- I want to have a ‘GO’ square so that all players start here
+- I want other squares to be generic (2..36)
+- I want a random dice total to appear on a player’s turn so that I know how many spaces they should move
+- I want players to move cw on the board according to the dice total
+- I want to have a status window so that I know where all players are on the board
+- I want to quit after 20 rounds so that I don’t get bored
+Iteration 2:
+- I want players to start with $1500
+- I want players to get $200 for landing on or passing go
+- I want the Go-To-Jail square to send players to Jail (a generic square)
+- I want players who go to Jail to continue play as normal on their next turn
+- I want the Income-Tax square to cause the player to lose $200 or 10% of their worth, whichever is more
+- I want players who lose all their money to leave the game
+Iteration 3:
+- I want to add property squares
+- I want to add lot properties
+- I want to add railroad properties
+- I want to add utility properties
+Iteration 4:
+- I want to add chance cards
+- I want to add community chest cards
+Extra:
+- I want to enter my name
+- I want to choose a marker
+- I want to play with ((1..7)-#ofsims) humans
+- I want track my wins, losses, etc.
+- I want to roll for first
+- I want players who roll doubles to roll again unless it is their third time rolling doubles
+- I want players who roll doubles three times to go to Jail
+- I want players who go to Jail to pay $50 in order to get out their next turn

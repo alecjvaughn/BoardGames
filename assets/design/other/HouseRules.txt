@@ -1,0 +1,11 @@
+House Rules
+Properties at Start: 0, 2, 4, All
+Houses per Hotel: 3, 4
+House/Hotel Limit: Y, N
+Free Parking: None, Bank, Taxes Only, 250
+Initial Cash: 1k, 1.5k, 2k
+Speed Die: Y, N
+Pass Go Salary: None, 200, 400
+Land on Go Salary: 1x, 2x
+Auctions: Y, N
+Sleight of Hand: Y, N
